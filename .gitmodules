@@ -1,3 +1,36 @@
 [submodule "nerdtree"]
 	path = vim/.vim/pack/vendor/opt/nerdtree
 	url = https://github.com/preservim/nerdtree
+[submodule "auto-pairs"]
+	path = vim/.vim/pack/vendor/opt/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "vim-closetag"]
+	path = vim/.vim/pack/vendor/opt/vim-closetag
+	url = https://github.com/alvan/vim-closetag
+[submodule "coc.nvim"]
+	path = vim/.vim/pack/vendor/opt/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "space-vim-theme"]
+	path = vim/.vim/pack/vendor/opt/space-vim-theme
+	url = https://github.com/liuchengxu/space-vim-theme
+[submodule "vim-airline"]
+	path = vim/.vim/pack/vendor/opt/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+[submodule "vim-fugitive"]
+	path = vim/.vim/pack/vendor/opt/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim-gitgutter"]
+	path = vim/.vim/pack/vendor/opt/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim-graphql"]
+	path = vim/.vim/pack/vendor/opt/vim-graphql
+	url = https://github.com/jparise/vim-graphql
+[submodule "vim-jacascript"]
+	path = vim/.vim/pack/vendor/opt/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule "vim-jsx-pretty"]
+	path = vim/.vim/pack/vendor/opt/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty
+[submodule "vim-typescript"]
+	path = vim/.vim/pack/vendor/opt/vim-typescript
+	url = https://github.com/leafgarland/typescript-vim
