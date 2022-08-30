@@ -1,0 +1,33 @@
+# install terminal customisations
+install --cask iterm2
+install install zsh
+
+# GIT
+install git
+install jesseduffield/lazygit/lazygit
+install lazygit
+install git-delta
+
+# ZSH setup
+install romkatv/powerlevel10k/powerlevel10k 
+install zsh-syntax-highlighting
+install zsh-autosuggestions
+install zsh-history-substring-search
+
+# Node
+install node
+
+# System helper utilities
+
+# tldr 
+install tldr
+
+# MacOS apps
+install --cask visual-studio-code
+install --cask rectangle
+install --cask firefox
+install --cask google-chrome
+install --cask brave
+
+
+

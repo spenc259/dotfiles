@@ -106,6 +106,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ide="vim . -c 'au VimEnter * :set splitbelow' -c 'au VimEnter * :terminal' -c 'au VimEnter * res 10' -c 'au VimEnter * wincmd p'"
 source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

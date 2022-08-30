@@ -57,12 +57,16 @@ nnoremap <silent><leader>q :q!<CR>
 " nnoremap <silent><leader>x :x<CR>
 
 " Fast moving between split 
-nnoremap <c-w> <c-w>w
+" nnoremap <c-w> <c-w>w
 nnoremap <c-h> <c-w>h
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
+" Move Screens
+nnoremap <leader>wr <c-w>L
+nnoremap <leader>R <c-w>R
+nnoremap <leader>r <c-w>r
 
 " Screen Splitting
 nnoremap <leader>/ :split<CR>
