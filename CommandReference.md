@@ -31,3 +31,12 @@ git restore --staged .
 
 ## VIM
 vim -c "helptags coc.nvim/doc/ | q"
+undo u
+redo ctrl+r
+redo (time) g- 
+see undo branches :undolist
+
+## TMUX
+rename window ctrl+b ,
+kill a pane ctrl+b x
+
