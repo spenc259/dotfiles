@@ -16,6 +16,7 @@ if has('packages')
  packadd auto-pairs
  packadd vim-gitgutter
  packadd vim-fugitive
+ packadd dracula
 endif
 
 set autoindent 
@@ -79,3 +80,6 @@ nnoremap <leader>2 :source ~/.vimrc<CR>
 " Turn off setting
 nnoremap ,<space> :nohlsearch<CR>
 nnoremap <leader>nrel norelativenumber<CR>
+
+" Enable mac clipboard
+set clipboard=unnamed

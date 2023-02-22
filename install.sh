@@ -1,3 +1,7 @@
+# generate ssh key
+ssh-keygen -t ed25519 -C "paul.spence@amido.com"
+
+
 # install homebrew
 
 /bin/bash -c “$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
