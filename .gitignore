@@ -35,3 +35,4 @@ Temporary Items
 ### Custom ###
 vim/.vim/.netrwhist
 *.swp
+vim/.vim/pack/vendor/opt/space-vim-theme
