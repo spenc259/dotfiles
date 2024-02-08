@@ -1,20 +1,3 @@
--- VIM Settings
-vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set ruler")
-vim.cmd("set number")
-vim.cmd("set relativenumber")
-
-vim.cmd("nnoremap <silent><leader>w :w!<CR>")
-vim.cmd("nnoremap <silent><leader>q :q!<CR>")
-vim.cmd("nnoremap <c-h> <c-w>h")
-vim.cmd("nnoremap <c-j> <c-w>j")
-vim.cmd("nnoremap <c-k> <c-w>k")
-vim.cmd("nnoremap <c-l> <c-w>l")
-
 -- LAZY
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -29,40 +12,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-local plugins = {
-	{
-		"folke/which-key.nvim",
-		{ "folke/neoconf.nvim", cmd = "Neoconf" },
-		"folke/neodev.nvim",
-	},
-	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-  { "nvim-telescope/telescope.nvim", tag = "0.1.5", dependencies = { 'nvim-lua/plenary.nvim' } },
-  { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
-  { "nvim-neo-tree/neo-tree.nvim", branch="v3.x", dependencies = {
-      "nvim-tree/nvim-web-devicons",
-      "MunifTanjim/nui.nvim"
-    } }
-}
+require("vim-settings")
+require("lazy").setup("plugins")
 
-local opts = {}
-
-require("lazy").setup(plugins, opts)
-
--- Theming
-require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
-
--- Telescope - find file
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
-
--- Treesitter
-local config = require("nvim-treesitter.configs")
-config.setup({
-  ensure_installed = {"lua", "javascript"},
-  highlight = { enable = true },
-  indent = { enable = true },
-})
